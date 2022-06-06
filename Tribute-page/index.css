@@ -1,0 +1,42 @@
+#main {
+  box-sizing: border-box;
+}
+#title {
+  background: linear-gradient(45deg, dodgerblue, lime);
+  text-align: center;
+  color: maroon;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+#img-caption {
+  font-size: 14pt;
+  align-self: center;
+}
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+#tribute-link {
+  text-decoration: none;
+  font-size: 14pt;
+  align-self: center;
+}
+#tribute-link:hover {
+  background-color: #00ffff;
+}

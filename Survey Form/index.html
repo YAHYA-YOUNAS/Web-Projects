@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" />
+    <title>Survey-Form</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br />
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        /><br /><br />
+        <label for="email" id="email-label">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        /><br /><br />
+        <label for="number" id="number-label">Number</label><br />
+        <input
+          type="number"
+          id="number"
+          placeholder="Enter your number"
+          min="1"
+          max="100"
+          required
+        /><br /><br />
+        <label>Select Your City</label><br />
+        <select id="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">Islamabad</option>
+          <option value="2">Lahore</option>
+          <option value="3">Karachi</option>
+          <option value="4">Peshawar</option></select
+        ><br /><br />
+        <fieldset id="gender">
+          <legend>Select your gender</legend>
+          <label for="male"
+            ><input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+            />Male</label
+          >
+          <label for="female"
+            ><input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+            />Female</label
+          >
+          <label for="other"
+            ><input
+              type="radio"
+              id="other"
+              name="gender"
+              value="other"
+            />Other</label
+          >
+        </fieldset>
+        <br /><br />
+        <label>Select Your Profession</label><br />
+        <label for="chk-1"
+          ><input type="checkbox" id="chk-1" value="student" />Student</label
+        ><br />
+        <label for="chk-2"
+          ><input type="checkbox" id="chk-2" value="employee" />Employee</label
+        ><br />
+        <label for="chk-3"
+          ><input
+            type="checkbox"
+            id="chk-3"
+            value="unemployed"
+          />Unemployed</label
+        ><br /><br />
+        <label>Comment Here</label><br />
+        <textarea cols="20" rows="3" id="comment"></textarea><br /><br />
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

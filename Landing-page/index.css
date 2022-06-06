@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  color: black;
+}
+
+#header {
+  background-color: lightgray;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-img {
+  margin-top: 25px;
+  width: 250px;
+  height: 50px;
+}
+
+#nav-bar {
+  align-self: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding-right: 50px;
+  font-size: 15pt;
+}
+
+#video {
+  width: 50%;
+  height: 400px;
+  margin: 0 0 5% 25%;
+}
+
+#features {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+#features p {
+  font-size: 12pt;
+}
+#pricing {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#pricing header {
+  background-color: lightgray;
+  text-align: center;
+  padding: 1px;
+}
+#tenor,
+#bass,
+#valve {
+  width: 25%;
+  border: 2px solid gray;
+  text-align: center;
+}
+#tenor p,
+#bass p,
+#valve p {
+  width: 70%;
+  line-height: 30px;
+  margin: 0 auto;
+}
+#select-1,
+#select-2 {
+  margin: 40px 0 20px 0;
+}
+#select-3 {
+  margin: 10px 0 20px 0;
+}
+#form {
+  height: 200px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+#form h2 {
+  margin-left: 16%;
+}
+
+#email {
+  margin: 0 0 0 25%;
+  width: 50%;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+  font-size: 12pt;
+}
+#email:focus {
+  outline: none;
+  border: 2px solid maroon;
+}
+#submit {
+  margin: 3% 0 0 45%;
+  border-radius: 5px;
+  font-size: 12pt;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+button,
+input[type="submit"] {
+  font-size: 10pt;
+  background-color: #f1c40f;
+  padding: 8px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: lightgray;
+  margin-top: 5%;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+  #nav-bar {
+    margin: 2%;
+  }
+  #form {
+    width: 100%;
+    margin-top: 25%;
+  }
+  #form h2 {
+    font-size: 14pt;
+    margin-left: 22%;
+  }
+  #video {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+  #tenor,
+  #bass,
+  #valve {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

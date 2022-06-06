@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+#background {
+    height: 100vh;
+    display: block;
+    position: relative;
+}
+  
+#background::after {
+    content: "";
+    background: url('../resources/images/bg.jpg');
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.container {
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    color: rgb(59, 58, 58);
+}
+
+.container p {
+    margin: 10px 0 10px 0;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+#modal {
+    display: none;
+    width: 70%;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 15%;
+    height: 80px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    line-height: 80px;
+    color: white;
+}
+.notification {
+    position: relative;
+    right: 40px;
+}
+
+#close {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+input, textarea {
+    font-size: 12pt;
+    padding: 8px;
+    width: 80%;
+    margin: 10px;
+    outline: none;
+    border: 3px solid rgb(119, 118, 117);
+    border-radius: 6px;
+
+}
+
+input:hover, textarea:hover{
+    background-color: rgb(231, 228, 228);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+#btn {
+    cursor: pointer;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+#btn:hover {
+    color: white;
+    background-color: grey;
+}

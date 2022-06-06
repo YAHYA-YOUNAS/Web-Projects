@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #be3144;
+}
+
+.nav-link {
+  display: block;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 14pt;
+  padding: 20px;
+}
+
+.nav-link:hover {
+  background-color: #45567d;
+}
+
+h1,
+h2 {
+  font-family: verdana;
+  font-weight: 700;
+  text-align: center;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  text-align: center;
+  color: white;
+}
+
+#welcome-section > p {
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #be3144;
+  margin-top: 2px;
+}
+#welcome-section > h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+#projects {
+  background-color: #45567d;
+  text-align: center;
+  color: white;
+}
+
+.projects-header {
+  padding-top: 80px;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: normal;
+  width: 40%;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+#projects-div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  gap: 50px;
+  margin-top: 2%;
+  padding: 30px;
+}
+
+.project-link {
+  width: 25%;
+  text-decoration: none;
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+}
+
+.project-tile {
+  margin-top: -5px;
+  padding: 20px;
+  background-color: #303841;
+  color: white;
+  font-family: verdana;
+}
+
+.project-tile:hover {
+  background-color: #be3144;
+}
+
+#profile-link {
+  padding: 15px;
+  background-color: #303841;
+  color: white;
+  font-family: verdana;
+  text-decoration: none;
+}
+
+#profile-link:hover {
+  background-color: #be3144;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem;
+  background: #303841;
+}
+
+#contact > h1 {
+  font-family: verdana;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+#contact > p {
+  font-size: 1rem;
+  font-style: italic;
+  color: white;
+  margin-top: 10px;
+  font-family: verdana;
+  opacity: 0.7;
+}
+
+#contact-links {
+  margin: 0 auto;
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-details {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  transition: all 2s ease;
+}
+
+.contact-details:hover {
+  font-size: 16pt;
+  margin-top: 10px;
+}
+
+hr {
+  border: 1px solid #be3144;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #303841;
+  border-top: 4px solid #be3144;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-family: verdana;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .projects-header {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  #projects-div {
+    flex-flow: column wrap;
+    column-gap: 100px;
+    width: 60%;
+    gap: 50px;
+  }
+
+  .project-link {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+
+  .project-tile {
+    padding: 20px;
+  }
+
+  #profile-link {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  #contact {
+    padding: 0;
+  }
+
+  #contact > h1 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+
+  #contact > p {
+    font-size: 0.8rem;
+  }
+
+  #contact-links {
+    font-size: 11pt;
+  }
+
+  .contact-details:hover {
+    font-size: 14pt;
+  }
+
+  hr {
+    border: 1px solid #be3144;
+  }
+
+  footer {
+    font-size: 10pt;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .projects-header {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+
+  #projects-div {
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .project-link {
+    width: 30%;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+
+  .project-tile {
+    font-size: 11pt;
+    padding: 15px;
+  }
+
+  #profile-link {
+    font-size: 11pt;
+  }
+}

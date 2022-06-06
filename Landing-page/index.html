@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <title>Landing-Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="Company logo"
+      />
+
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#video">How it works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h2>Handcrafted, home-made masterpieces</h2>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <br />
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </article>
+
+      <article>
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/5Peo-ivmupE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article id="features">
+        <section id="premium">
+          <h2>Premium Materials</h2>
+          <p>
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </section>
+
+        <section id="shipping">
+          <h2>Fast Shipping</h2>
+          <p>
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </section>
+
+        <section id="quality">
+          <h2>Quality Assurance</h2>
+          <p>
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </section>
+      </article>
+
+      <br /><br />
+
+      <article id="pricing">
+        <section id="tenor">
+          <header>
+            <h3>TENOR TROMBONE</h3>
+          </header>
+          <h3>$600</h3>
+          <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+          <button type="button" id="select-1">SELECT</button>
+        </section>
+
+        <section id="bass">
+          <header>
+            <h3>BASS TROMBONE</h3>
+          </header>
+          <h3>$900</h3>
+          <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+          <button type="button" id="select-2">SELECT</button>
+        </section>
+
+        <section id="valve">
+          <header>
+            <h3>VALVE TROMBONE</h3>
+          </header>
+          <h3>$1200</h3>
+          <p>
+            Plays similar to a Trumpet Great for Jazz Bands Lorem ipsum dolor.
+            Lorem ipsum.
+          </p>
+          <button type="button" id="select-3">SELECT</button>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div id="links">
+        <a class="nav-link" href="#">Privacy</a>
+        <a class="nav-link" href="#">Terms & Conditions</a>
+        <a class="nav-link" href="#">Contact</a>
+      </div>
+      <br />
+      <p>&copy; Original Trombones, 2021</p>
+    </footer>
+  </body>
+</html>
