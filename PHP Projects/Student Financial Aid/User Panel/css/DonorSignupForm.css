@@ -1,0 +1,651 @@
+/********************************* Custom ****************************************/
+
+*{
+    color: white;
+}
+html, body {
+    overflow-x: hidden;
+    
+}
+.background{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(85, 83, 83, 0.8)),url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.head{
+    width: 100%;
+    height: 125px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
+
+.logo{
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+    
+}
+.title{
+    margin-left: 200px;
+    padding: 20px;
+}
+nav {
+    margin-top: 5px;
+}
+.nav{
+    width: 100%;
+    margin: 0 0 15px 0px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;    
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    display: inline;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+.nav ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.nav ul li a:hover{
+    color: cornsilk;
+}
+.nav ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover::after{
+    width: 100%;
+}
+.dropdown {
+    background-color: brown;
+    padding: 2px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    float: right;
+    padding-left: 30px;
+}
+.dropbtn {
+    cursor: pointer;
+}
+.dropdown a{
+     font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 3px;
+}
+.dropdown-content a {
+    float: none;
+    font-size: 12px;
+    padding: 7px 8px;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: brown;
+}
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.notification h3 {
+    font-size: 14pt;
+    text-align: center;
+    margin: 15px 0 0 15px;
+}
+
+#error {
+    color: red;
+}
+
+#notify {
+    color: lime;
+}
+
+.button{
+    background-color: mediumpurple; 
+    padding: 7px; 
+    color:white; 
+    border:none;
+    margin:5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rebeccapurple;
+}
+.signup-box{
+    max-width: 700px;
+    height: auto;
+    background: rgba(53, 50, 50, 0.5);
+    color: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 60px 50px;
+}
+.signup-img{
+    width:100px;
+    height: 100px;
+    margin-left: 35%;
+    margin-top: -70px;
+}
+.signup-box h2{
+    margin:0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+    color:#009688;
+}
+.user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin: 20px 0 5px 0;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  color: black;
+  transition: all 0.3s ease;
+}
+#signup-btn {
+    border: none;
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 37%;
+    cursor: pointer;
+
+}
+#signup-btn button{
+    width: 100%;
+    height: 40px;
+    font-size: 14pt;
+    background: #009688;
+    color: #fff;
+    border-radius: 9px;
+}
+#signup-btn button:hover{
+    background-color: burlywood;
+}
+footer{
+    height: 315px;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
+    color: white;
+}
+.footer{
+    height: 250px;
+    padding: 40px;
+}
+.footer ul li{
+    padding: 10px;
+}
+.col_1, .col_2, .col_3{
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+.col_2, .col_3{
+    margin-left:140px;
+}
+.col_3{
+    padding: 15px;
+}
+.col_1 ul{
+    float: left;
+}
+.rights{
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+     text-align: center;
+    border-top: 1px solid Black;
+}
+a:hover{
+    color: #2471A3;
+}
+#marquee{
+    height: 200px;
+}
+#feedback{
+    color: black;
+}
+#btn{
+    float: right;
+    margin-right: 15px;
+}
+
+/********************************* Mobiles Range ****************************************/
+
+@media only screen and (min-width:400px) and (max-width: 600px) {
+    .background{
+    height: auto;
+    }
+    .nav {
+        width: 98%;
+        height: 315px;
+    }
+    .nav ul li{
+        float: left;
+        width: 70%;
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        padding: 5px 0 5px 0;
+        text-align: center;   
+    }
+    .nav ul li:hover{
+        background:linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)); 
+        cursor: pointer;
+    }
+    .nav ul li a{
+        font-size: 12px;
+    }
+    .dropdown{
+        float: left;
+        width: 80%;
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        padding: 5px 0 5px 0;
+        text-align: center;    
+    }
+    .dropdown-content {
+        position: relative;
+    }
+    
+    .heading{
+        font-size: 16px;
+        
+    }
+    .logo img{
+        width: 100;
+        height: 100;
+    }
+    .title{
+    margin-left: 150px;
+    padding: 20px;
+        
+    } 
+    
+    .button{
+        padding: 1px;
+        font-size: 10px;
+        
+    }
+    .signup-box{
+        margin: 0 auto;
+        padding: 60px 50px;
+    }
+    .signup-img{
+        width:90px;
+        height: 85px;
+        margin-left: 40%;
+    }
+    
+   form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .user-details .input-box input{ 
+        font-size: 12px;
+    }
+  .content form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    #signup-btn button{
+        font-size: 12px;
+    }
+    
+    footer{
+        width: 100%;
+        height: 405px;  
+    }
+    .footer{
+        width: 100%;
+        height: 340px;
+        padding: 5px;
+    }
+    .footer h4 {
+        margin-left: 20px;
+    }
+    .footer ul li{
+        padding: 8px;
+        font-size: 12px;
+	width : 100px;
+    }
+    .col_3{
+	width: 60%;
+	height: 100px;
+        margin-left: 70px; 
+        
+    }
+    #feedback{
+        font-size: 11px;
+        
+	
+    }
+     #btn{
+        float: none;
+        margin-left: 40%;
+    }
+    .rights{
+        padding: 0;
+        margin-top: 5px;
+        
+    }
+    .para{
+	text-align: center;
+        font-size: 12px;
+        
+    }
+
+}
+
+/********************************* Tablets Range ****************************************/
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    .background{
+    height: auto;
+    }
+    .nav{
+        width: 100%;    
+    }
+	nav {
+        width: 100%;
+        padding-left: 0px;
+  	}
+    .nav ul li{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        margin: 0 0 0 3%;
+    }
+    .nav ul li a{
+        font-size: 12px;
+    }
+
+    .dropdown {
+        margin: -22px 40px 0 520px;
+        width: 10%;
+        padding-left: 5px;
+    }
+    .dropdown-content {
+        min-width: 80px;
+    }
+    
+    .heading{
+        font-size: 20px;
+    }
+    .logo img{
+        width: 100;
+        height: 100;
+    }
+    .title{
+    margin-left: 150px;
+    padding: 20px;
+    } 
+    
+    .button{
+        padding: 2px;
+        font-size: 12px;
+    }
+    
+   .signup-box{
+        margin: 0 auto;
+        padding: 60px 50px;
+    }
+    .signup-img{
+        margin-left: 42%;
+    }
+    
+    form .user-details .input-box{
+        width: 45%;
+    }
+    .user-details .input-box input{
+    font-size: 12px;
+    }
+    footer{
+        width: 100%;
+        height: 405px;
+    }
+    .footer{
+        width: 100%;
+        height: 340px;
+        padding: 5px;
+    }
+    .footer h4 {
+        margin-left: 20px;
+    }
+    .footer ul li{
+        padding: 8px;
+        font-size: 12px;
+	    width : 100px;
+    }
+    .col_3{
+	   width: 30%;
+	   height: 100px;
+       margin-left: 25%; 
+    }
+    #feedback{
+        font-size: 12px;
+	
+    }
+     #btn{
+        float: none;
+        margin-left: 60%;
+    }
+    .rights{
+        padding: 0;
+        margin-top: 5px;
+    }
+    .para{
+	text-align: center;
+        font-size: 12px;
+    }
+    
+    
+    
+   
+}
+
+/********************************* Laptops and Desktops Range ****************************************/
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    .background {
+	height: auto;
+    }
+	.nav{
+        width: 100%;    
+    }
+	nav {
+        width: 100%;
+        padding-left: 0px;
+  	}
+    .nav ul li{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        margin: 0 0 0 4%;
+    }
+    .nav ul li a{
+        font-size: 15px;
+    }
+
+    .dropdown {
+        margin: -22px 120px 0 520px;
+        width: 7%;
+        padding-left: 5px;
+    }
+    
+    .button{
+        padding: 5px;
+        font-size: 12px;
+    }
+   .signup-box{
+        margin: 0 auto;
+        padding: 60px 50px;
+    }
+    .signup-img{
+        margin-left: 42%;
+        
+    }
+    
+    form .user-details .input-box{
+        width: 45%;
+    }
+    .user-details .input-box input{
+        font-size: 14px;
+    }
+    
+    footer {
+        width: auto;
+    }
+    .footer{
+        height: 250px;
+        padding: 10px;
+    }
+    .footer h4 {
+        margin-top: 20px;
+    }
+    .footer ul li{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .col_3{
+        margin: 10px 0 0 10px;
+    }
+    #feedback{
+        margin: 0 50px 0 0;
+        font-size: 14px;
+    }
+    #btn{
+        float: none;
+        margin-left: 75%;
+    }
+    .para {
+        font-size: 12px;
+    }
+    .menu-btn{
+        display: none;
+    }
+}
+/********************************* Laptops and Desktops Range > 1025 ****************************************/
+
+@media only screen and (min-width:1025px) {
+    .background {
+	height:auto;
+    }
+	.nav{
+        width: 100%;    
+    }
+	nav {
+        width: 100%;
+        padding-left: 0px;
+  	}
+    .nav ul li{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        margin: 0 0 0 6%;
+    }
+    .nav ul li a{
+        font-size: 15px;
+    }
+    .dropdown {
+        margin: -22px 120px 0 520px;
+        width: 5%;
+        padding-left: 5px;
+    }
+   
+    .button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .signup-box{
+        margin: 0 auto;
+        padding: 60px 50px;
+    }
+    .signup-img{
+        margin-left: 42%;  
+    }
+    
+    form .user-details .input-box{
+        width: 45%;
+    }
+    .user-details .input-box input{
+        font-size: 14px;
+    }
+    footer {
+        width: auto;
+    }
+    .footer{
+        height: 250px;
+        padding: 10px;
+    }
+    .footer h4 {
+        margin-top: 20px;
+    }
+    .footer ul li{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .col_3{
+        margin: 10px 0 0 10px;
+    }
+    #feedback{
+        margin: 0 50px 0 0;
+        font-size: 14px;
+    }
+    #btn{
+        float: none;
+        margin-left: 160px;
+    }
+    .para {
+        font-size: 12px;
+    }
+    .menu-btn{
+        display: none;
+    }
+}

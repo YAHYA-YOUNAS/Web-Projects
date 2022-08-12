@@ -1,0 +1,784 @@
+/********************************* Custom ****************************************/
+
+*{
+    color: white;
+}
+html, body {
+    overflow-x: hidden;
+}
+.background{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(85, 83, 83, 0.8)),url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.head{
+    width: 100%;
+    height: 125px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
+
+.logo{
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+    
+}
+.title{
+    margin-left: 200px;
+    padding: 20px;
+}
+.title .heading {
+    margin-top: 20px;
+    color: limegreen;
+}
+.nav{
+    width: 100%;
+    margin: 5px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;    
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    display: inline;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+.nav ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.nav ul li a:hover{
+    color: cornsilk;
+}
+.nav ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover::after{
+    width: 100%;
+}
+#logout {
+    width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: brown;
+    float: right;
+    margin: 0 6% 0 0;
+    padding: 2px;
+
+}
+main{
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 40px;
+}
+.content{
+    width: 70%;
+    height: 470px;
+    margin: 10px;
+    float: left;
+    color: white;
+}
+.dir_img{
+    width: 25%;
+    height: 225px;
+    margin: 30px;
+    float: left;
+    padding: 10px;
+}
+.dir_img img{
+    width: 200px;
+    height: 200px;
+}
+.message{
+    width: 64%;
+    height: 460px;
+    float: right;
+    margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.button{
+    background-color: mediumpurple; 
+    padding: 7px; 
+    color:white; 
+    border:none;
+    margin:5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rebeccapurple;
+}
+.side_bar{
+    width: 25%;
+    height: auto;
+    float: right;
+    margin: 10px;
+    color: white;
+    border-left: 1px solid white;
+}
+.news{
+    width:100%;
+    height: 260px;
+    padding-left: 10px;
+    border-bottom: 1px solid white;
+}
+.social{
+    width: 100%;
+    height: 190px;
+    padding: 0 20px 20px 20px;
+}
+.social img{
+    width: 15%;
+    height: 40px;
+}
+footer{
+    height: 315px;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
+    color: white;
+}
+.footer{
+    height: 250px;
+    padding: 40px;
+}
+.footer ul li{
+    padding: 10px;
+}
+.col_1, .col_2, .col_3{
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+.col_2, .col_3{
+    margin-left:140px;
+}
+.col_3{
+    padding: 15px;
+}
+.col_1 ul{
+    float: left;
+}
+.rights{
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+     text-align: center;
+    border-top: 1px solid Black;
+}
+a:hover{
+    color: #2471A3;
+}
+#marquee{
+    height: 200px;
+}
+#feedback{
+    color: black;
+}
+#btn{
+    float: right;
+    margin-right: 15px;
+}
+
+/********************************* Mobiles Range ****************************************/
+
+@media only screen and (min-width:400px) and (max-width: 600px) {
+    .banner{
+    height: auto;
+    }
+    .nav {
+        width: 98%;
+        padding-left: 30px;
+        height: 315px;
+    }
+    .nav ul li{
+        float: left;
+        width: 70%;
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        padding: 5px 0 5px 0;
+        text-align: center;   
+    }
+    .nav ul li:hover{
+        background:linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)); 
+        cursor: pointer;
+    }
+    .nav ul li a{
+        font-size: 12px;
+    }
+    #logout {
+        padding: 5px;  
+        float: none;
+        margin: 0 0 0 0;
+    }
+    .heading{
+        font-size: 16px;
+        
+    }
+    .logo img{
+        width: 100;
+        height: 100;
+    }
+    .title{
+    margin-left: 150px;
+    padding: 20px;
+        
+    }
+    .title .heading {
+        margin-left: 10%;
+        font-size: 16pt;
+    }  
+    main{
+        height: 1100px;
+        
+    }
+    .content{
+    width: 90%;
+    height: auto;
+    margin-bottom: 10%;
+    padding-right: 10px;
+        
+    }
+    .dir_img{
+        width: 100px;
+        height: 250px;
+        padding: 5px;
+	margin: 10px 0 0 30%;
+        
+    }
+    
+    .dir_img img{
+        width: 130px;
+        height: 125px;
+    }
+    .dir_img hr {
+        width: 130px;
+       
+   }
+   .dir_img p{
+        font-size: 10pt;
+        text-align: center;
+    width: 100px;	
+    margin-left: 20px;
+
+   }		
+    .message{
+        width: 90%;
+        height: auto;
+	    
+        
+    }
+     .message .heading {
+	font-size: 18pt;	
+}
+    .message p {
+        font-size: 9pt;
+        width: 100%;
+    }
+    .button{
+        padding: 1px;
+        font-size: 10px;
+        
+    }
+    .side_bar{
+        float: left;
+        width: 90%;
+        margin-left: 10%;
+        height: 260px;
+        
+    }
+    .news{
+        width:80%;
+        height: 170px;
+        padding: 5px;
+        
+    }
+    .social{
+        width: 80%;
+        height: 50px;
+        margin-left: 5px;
+        padding: 1px;
+        
+    }
+    .social img{
+        width: 45px;
+        height: 40px;
+        padding: 5px;
+        margin: 5px;
+        
+    }
+    #marquee{
+        height: 100px;
+        
+    }
+    marquee p{
+        font-size: 10px;
+    }
+    footer{
+        width: 100%;
+        height: 405px;
+        
+    }
+    .footer{
+        width: 100%;
+        height: 340px;
+        padding: 5px;
+    }
+    .footer h4 {
+        margin-left: 20px;
+    }
+    .footer ul li{
+        padding: 8px;
+        font-size: 12px;
+	width : 100px;
+    }
+    .col_3{
+	width: 60%;
+	height: 100px;
+        margin-left: 70px; 
+        
+    }
+    #feedback{
+        font-size: 11px;
+        
+	
+    }
+     #btn{
+        float: none;
+        margin-left: 40%;
+    }
+    .rights{
+        padding: 0;
+        margin-top: 5px;
+        
+    }
+    .para{
+	text-align: center;
+        font-size: 12px;
+        
+    }
+    
+    
+    
+   
+}
+
+/********************************* Tablets Range ****************************************/
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    .banner{
+    height: auto;
+    }
+    .nav{
+        width: 100%;    
+    }
+	nav {
+        width: 100%;
+        padding-left: 0px;
+  	}
+    .nav ul li{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        margin: 0 0 0 3%;
+    }
+    .nav ul li a{
+        font-size: 12px;
+    }
+    #logout {
+        width: 60px;
+        border-radius: 8px;
+        margin: 0 2% 0 0;
+    }
+    
+    .heading{
+        font-size: 20px;
+    }
+    .logo img{
+        width: 100;
+        height: 100;
+    }
+    .title{
+    margin-left: 150px;
+    padding: 20px;
+    } 
+    .title .heading {
+        margin-left: 25%;
+        font-size: 16pt;
+    } 
+    main{
+        height: 1200px;
+    }
+    .content{
+    width: 90%;
+    height: auto;
+    margin-bottom: 10%;
+    padding-right: 10px;
+    }
+    .dir_img{
+        width: 100px;
+        height: 250px;
+        padding: 5px;
+	   margin: 10px 0 0 40%;
+    }
+    
+    .dir_img img{
+        width: 130px;
+        height: 125px;
+    }
+    .dir_img hr {
+        width: 130px;
+   }
+   .dir_img p{
+          font-size: 10pt;
+          text-align: center;
+          width: 100px;	
+          margin-left: 15px;
+          
+   }	
+    .message{
+        width: 90%;
+        height: auto;
+	    margin: 0 0 0 120px;
+    }
+     .message .heading {
+	font-size: 22pt;	
+}
+    .message p {
+        font-size: 14px;
+        width: 100%;
+    }
+    .button{
+        padding: 2px;
+        font-size: 12px;
+    }
+    .side_bar{
+        float: left;
+        width: 100%;
+        height: 280px;
+	    margin: 0 0 0 12%;
+    }
+    .news{
+        width:80%;
+        height: 170px;
+        padding: 5px;
+    }
+    .social{
+        width: 80%;
+        height: 50px;
+        margin-left: 5px;
+        padding: 1px;
+    }
+    .social img{
+        width: 60px;
+        height: 50px;
+        padding: 5px;
+        margin: 5px;
+    }
+    #marquee{
+        height: 100px;
+    }
+    marquee p{
+        font-size: 15px;
+    }
+    footer{
+        width: 100%;
+        height: 405px;
+    }
+    .footer{
+        width: 100%;
+        height: 340px;
+        padding: 5px;
+    }
+    .footer h4 {
+        margin-left: 20px;
+    }
+    .footer ul li{
+        padding: 8px;
+        font-size: 12px;
+	    width : 100px;
+    }
+    .col_3{
+	   width: 30%;
+	   height: 100px;
+       margin-left: 25%; 
+    }
+    #feedback{
+        font-size: 12px;
+	
+    }
+     #btn{
+        float: none;
+        margin-left: 60%;
+    }
+    .rights{
+        padding: 0;
+        margin-top: 5px;
+    }
+    .para{
+	text-align: center;
+        font-size: 12px;
+    }
+    
+    
+    
+   
+}
+
+/********************************* Laptops and Desktops Range ****************************************/
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    .banner {
+	height: auto;
+    }
+	.nav{
+        width: 100%;    
+    }
+	nav {
+        width: 100%;
+        padding-left: 0px;
+  	}    
+    .nav ul li{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        margin: 0 0 0 3%;
+    }
+    .nav ul li a{
+        font-size: 14px;
+    }
+    #logout {
+        padding: 3px;
+        width:80px;
+        margin: 0 9% 0 0;
+    }
+    .title .heading {
+        margin-left: 25%;
+    }
+    main{
+        height: 600px;
+    }
+    .content{
+    width: 70%;
+    height: auto;
+    margin: 5px;
+    }
+    .dir_img{
+        width: 27%;
+        height: 225px;
+        margin: 5px 0 0 0;
+        padding: 20px;
+    }
+    .dir_img img{
+        margin-left: 10%;
+        width: 80%;
+        height: 70%;
+    }
+     
+    .dir_img hr {
+        width: 100%;
+    }
+     
+     .dir_img p{
+	font-size: 14px;
+         text-align: center;
+	margin: 0 0 0 0;
+    }
+    .message{
+        width: 70%;
+        margin: 5px 15px 0 0;
+    }
+    .button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .side_bar{
+        width: 27%;
+        height: 500px;
+        margin: 5px;
+    }
+    .news{
+        width:100%;
+        height: 260px;
+        padding: 3px;;
+    }
+    .social{
+        width: 95%;
+        height: 190px;
+        margin-left: 5px;
+        padding: 1px;
+    }
+    .social img{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+    #marquee{
+        height: 190px;
+    }
+    footer {
+        width: auto;
+    }
+    .footer{
+        height: 250px;
+        padding: 10px;
+    }
+    .footer h4 {
+        margin-top: 20px;
+    }
+    .footer ul li{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .col_3{
+        margin: 10px 0 0 10px;
+    }
+    #feedback{
+        margin: 0 50px 0 0;
+        font-size: 14px;
+    }
+    #btn{
+        float: none;
+        margin-left: 75%;
+    }
+    .para {
+        font-size: 12px;
+    }
+    .menu-btn{
+        display: none;
+    }
+}
+/********************************* Laptops and Desktops Range > 1025 ****************************************/
+
+@media only screen and (min-width:1025px) {
+    .banner {
+	height:auto;
+    }
+	.nav{
+        width: 100%;    
+    }
+	nav {
+        width: 100%;
+        padding-left: 0px;
+  	}
+    .nav ul li{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        margin: 0 0 0 5.8%;
+    }
+    .nav ul li a{
+        font-size: 15px;
+    }
+    #logout {
+        width: 75px;
+        margin: 0 4.5% 0 0;
+    }
+    main{
+        height: 600px;
+    }
+    .content{
+    width: 70%;
+    height: auto;
+    margin: 5px;
+    }
+    .dir_img{
+        width: 16%;
+        height: 225px;
+        margin: 5px 0 0 5%;
+        padding: 20px;
+    }
+    .dir_img img{
+        width: 115px;
+        height: 110px;
+    }
+    .dir_img hr {
+        width: 115px;
+    }
+     .dir_img p{
+	font-size: 14px;
+    width: 100px;
+         text-align: center;
+	margin: 0 0 0 10px;
+    }
+    .message{
+        width: 70%;
+        margin: 5px 15px 0 0;
+    }
+    .button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .side_bar{
+        width: 27%;
+        height: 500px;
+        margin: 5px;
+    }
+    .news{
+        width:100%;
+        height: 260px;
+        padding: 3px;;
+    }
+    .social{
+        width: 95%;
+        height: 190px;
+        margin-left: 5px;
+        padding: 1px;
+    }
+    .social img{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+    #marquee{
+        height: 190px;
+    }
+    footer {
+        width: auto;
+    }
+    .footer{
+        height: 250px;
+        padding: 10px;
+    }
+    .footer h4 {
+        margin-top: 20px;
+    }
+    .footer ul li{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .col_3{
+        margin: 10px 0 0 10px;
+    }
+    #feedback{
+        margin: 0 50px 0 0;
+        font-size: 14px;
+    }
+    #btn{
+        float: none;
+        margin-left: 160px;
+    }
+    .para {
+        font-size: 12px;
+    }
+    .menu-btn{
+        display: none;
+    }
+}
